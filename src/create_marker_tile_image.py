@@ -17,6 +17,7 @@ class MarkerFactory:
 
         # add marker centered
         img[margin:-margin, margin:-margin] = img_marker
+        img = cv2.flip(img, 1)
 
         return img
 
